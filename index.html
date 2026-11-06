@@ -4,14 +4,14 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Workshop Có chuyên môn để chuẩn, có Agent để nhàn 2026</title>
-<meta name="description" content="Workshop chuyên môn về dinh dưỡng và ứng dụng AI Agent, do Gnosis by Lesaffre phối hợp cùng MIDU tổ chức ngày 24/11/2026 tại Hà Nội. Miễn phí tham dự, đăng ký giữ chỗ ngay.">
+<meta name="description" content="Workshop do Viện Phát triển Thể chất và Trí tuệ tổ chức ngày 24/11/2026 tại Hà Nội. Miễn phí tham dự, đăng ký tham gia ngay.">
 
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Midu MenaQ7">
 <meta property="og:locale" content="vi_VN">
 <meta property="og:url" content="https://workshop2026.midu.vn/">
 <meta property="og:title" content="Workshop Có chuyên môn để chuẩn, có Agent để nhàn 2026">
-<meta property="og:description" content="Workshop chuyên môn về dinh dưỡng và ứng dụng AI Agent. Gnosis by Lesaffre × MIDU. Miễn phí tham dự, dự kiến 300 khách mời.">
+<meta property="og:description" content="Workshop do Viện Phát triển Thể chất và Trí tuệ tổ chức ngày 24/11/2026 tại Hà Nội. Miễn phí tham dự, đăng ký tham gia ngay.">
 <meta property="og:image" content="https://workshop2026.midu.vn/og-image.jpg?v=1">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
@@ -60,9 +60,11 @@
   header.top{position:sticky; top:0; z-index:50; background:rgba(255,255,255,.88); backdrop-filter:blur(12px);
     border-bottom:1px solid rgba(55,50,165,.10)}
   /* Logo, ba mục menu và nút chia đều cả thanh, không dồn khoảng trống về một phía */
-  .top .khung{display:flex; align-items:center; gap:16px; height:64px}
+  .top .khung{display:flex; align-items:center; gap:16px; height:86px}
   .logolink{display:flex; align-items:center; flex:0 0 auto; touch-action:manipulation}
-  .logo{height:23px; width:auto; display:block}
+  .logo{height:54px; width:auto; display:block}
+  @media (max-width:520px){ .top .khung{height:74px} .logo{height:44px} }
+  @media (max-width:380px){ .logo{height:38px} }
   .neo{display:flex; flex:1 1 auto; justify-content:space-evenly; padding:0 20px}
   .neo a{color:var(--td-1); text-decoration:none; font-weight:600; font-size:15px; white-space:nowrap;
     padding:6px 2px; border-bottom:2px solid transparent; touch-action:manipulation}
@@ -320,6 +322,11 @@
   /* ===== Đơn vị đồng hành ===== */
   .dvi{display:grid; gap:18px; margin-top:34px; grid-template-columns:1fr}
   @media(min-width:840px){ .dvi{grid-template-columns:repeat(2,1fr)} }
+  /* Một đơn vị đứng riêng thì giữ một cột, thu hẹp lại cho khỏi loãng */
+  .dvi.mot{max-width:780px; margin-left:auto; margin-right:auto}
+  .dvi.mot .khunglogo{height:74px}
+  .dvi.mot .khunglogo img{max-height:68px}
+  @media(min-width:840px){ .dvi.mot{grid-template-columns:1fr} }
   .dvi .o{background:var(--surface); border:1px solid var(--line); border-radius:20px; padding:30px 28px;
     box-shadow:var(--bong); transition:transform .2s ease, box-shadow .2s ease;
     display:flex; flex-direction:column; align-items:center; text-align:center}
@@ -451,7 +458,7 @@
 
 <header class="top">
   <div class="khung">
-    <a class="logolink" href="#dau"><img class="logo" src="logo-midu.png" alt="Midu MenaQ7"></a>
+    <a class="logolink" href="#dau"><img class="logo" src="logo-vien.png" alt="Viện Phát triển Thể chất và Trí tuệ"></a>
     <nav class="neo">
       <a href="#gioi-thieu">Giới thiệu chung</a>
       <a href="#danh-cho">Dành cho ai</a>
@@ -494,7 +501,7 @@
   <div class="khung">
     <h1>Giới thiệu chung</h1>
     <div class="loidan">
-      <p>Gnosis by Lesaffre phối hợp cùng MIDU tổ chức workshop <b>“Có chuyên môn để chuẩn, có Agent để nhàn”</b> tại Hà Nội, dự kiến quy tụ 300 khách mời hoạt động trong lĩnh vực sức khỏe, dinh dưỡng và kinh doanh.</p>
+      <p>Viện Phát triển Thể chất và Trí tuệ tổ chức workshop <b>“Có chuyên môn để chuẩn, có Agent để nhàn”</b> tại Hà Nội, với sự phối hợp và đồng hành của MIDU GROUP, Gnosis by Lesaffre cùng nhiều đơn vị uy tín trong lĩnh vực sức khỏe và dinh dưỡng. Chương trình dự kiến quy tụ 300 khách mời hoạt động trong lĩnh vực sức khỏe, dinh dưỡng và kinh doanh.</p>
       <p>Chương trình tập trung vào <b>hai nội dung chính</b>: cập nhật kiến thức khoa học về vi chất dinh dưỡng từ các chuyên gia trong nước và quốc tế, đồng thời giới thiệu cách ứng dụng AI Agent nhằm nâng cao hiệu quả tư vấn, chăm sóc khách hàng và kinh doanh.</p>
       <p class="slogan">Một ngày nâng tầm chuyên môn, khám phá cách AI&nbsp;Agent thay đổi hoạt động chăm sóc khách hàng và kinh doanh!</p>
     </div>
@@ -638,7 +645,7 @@
         <div class="noi">
           <div class="vai">Ứng dụng AI&nbsp;Agent</div>
           <h3>Ông Nguyễn Xuân Hợp</h3>
-          <p class="chuc">Chủ tịch Công ty Cổ phần Midu&nbsp;Group</p>
+          <p class="chuc">Chủ tịch HĐQL Viện Phát triển Thể chất và Trí&nbsp;tuệ</p>
         </div>
       </div>
       <div class="o">
@@ -685,7 +692,7 @@
       <div class="muc">
         <div class="g">08:15</div>
         <div class="n">Khai mạc, giới thiệu đơn vị đồng hành</div>
-        <div class="d">Đại diện MIDU</div>
+        <div class="d">Đại diện Viện</div>
       </div>
       <div class="muc">
         <div class="g">08:30</div>
@@ -725,7 +732,7 @@
       <div class="muc">
         <div class="g">16:50</div>
         <div class="n">Tổng kết, công bố lộ trình học tiếp, chụp ảnh tập thể</div>
-        <div class="d">Đại diện MIDU</div>
+        <div class="d">Đại diện Viện</div>
       </div>
       </div>
     </div>
@@ -823,6 +830,22 @@
   </div>
 </div>
 
+<section id="to-chuc">
+  <div class="khung">
+    <h2>Đơn vị tổ chức</h2>
+
+    <div class="dvi mot">
+      <div class="o">
+        <div class="khunglogo"><img src="logo-vien.png" alt="Viện Phát triển Thể chất và Trí tuệ"></div>
+        <h3>Viện Phát triển Thể chất và Trí tuệ</h3>
+        <p>Là tổ chức khoa học và công nghệ, định hướng nghiên cứu, ứng dụng và chuyển giao các giải pháp phát triển thể chất, trí tuệ và chăm sóc sức khỏe cộng đồng.</p>
+        <p>Với đội ngũ chuyên gia đa lĩnh vực cùng định hướng hợp tác trong nước và quốc tế, Viện hướng tới kết nối tri thức khoa học với thực tiễn, thúc đẩy đào tạo chuyên môn và nâng cao chất lượng chăm sóc sức khỏe tại Việt Nam.</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
 <section class="xen" id="dong-hanh">
   <div class="khung">
     <h2>Đơn vị đồng hành</h2>
@@ -848,6 +871,7 @@
 <footer>
   <div class="khung">
     <p class="ten">Workshop “Có chuyên môn để chuẩn, có Agent để nhàn”</p>
+    <p>Đơn vị tổ chức: Viện Phát triển Thể chất và Trí tuệ</p>
     <p>Đơn vị đồng hành: Gnosis by Lesaffre và MIDU GROUP</p>
     <p>Đơn vị thực hiện: VNITY</p>
   </div>
